@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
   onSearch: (query: string) => void;
@@ -17,7 +18,6 @@ const Header = ({ onSearch }: HeaderProps) => {
     setSearchQuery(term);
     onSearch(term);
   };
-
 
   return (
     <header role="banner">
@@ -44,35 +44,39 @@ const Header = ({ onSearch }: HeaderProps) => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto flex">
               <li className="nav-item">
-                <a className="nav-link active text-red" aria-current="page" href="#">
+                <Link
+                  className="nav-link active text-red"
+                  aria-current="page"
+                  to="/"
+                >
                   Accueil
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/films">
                   Films
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/series">
                   Séries
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/ma-liste">
                   Ma Liste
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/quiz">
                   Quiz
-                </a>
+                </Link>
               </li>
             </ul>
             <SearchBar
               searchTerm={searchQuery}
               onSearchChange={handleSearchChange}
-            />  
+            />
           </div>
         </div>
       </nav>

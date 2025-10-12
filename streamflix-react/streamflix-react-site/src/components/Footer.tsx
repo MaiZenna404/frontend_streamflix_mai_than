@@ -4,10 +4,10 @@ const Footer = () => {
       <div className="footer-content">
         <section aria-label="social-media">
           <div className="social-media-wrapper">
-            <img src="./assets/sns/Facebook.svg" alt="Facebook Icon" />
-            <img src="./assets/sns/Twitter.svg" alt="Twitter Icon" />
-            <img src="./assets/sns/Instagram.svg" alt="Instagram Icon" />
-            <img src="./assets/sns/YouTube.svg" alt="YouTube Icon" />
+            <img src="./assets/sns/facebook-svgrepo-com (1).svg" alt="Facebook Icon" />
+            <img src="./assets/sns/twitter-svgrepo-com.svg" alt="Twitter Icon" />
+            <img src="./assets/sns/instagram-svgrepo-com (2).svg" alt="Instagram Icon" />
+            <img src="./assets/sns/youtube-168-svgrepo-com.svg" alt="YouTube Icon" />
           </div>
         </section>
         <section aria-label="footer-navigation" className="footer-links">
